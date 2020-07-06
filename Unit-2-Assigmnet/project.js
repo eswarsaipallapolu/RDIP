@@ -103,3 +103,46 @@ function game()
         return false;
     }
 }
+function get(num) 
+{
+    document.getElementById("result").value += num;
+    return 0;
+}
+
+function clr() 
+{
+    document.getElementById("result").value = '';
+    return 0;
+}
+
+function dot() 
+{
+    document.getElementById("result").value += '.';
+    return 0;
+}
+
+function Sqrt() 
+{
+    let result = document.getElementById("result").value;
+    return document.getElementById("result").value = Math.sqrt(result).toFixed(3);
+
+}
+
+function absol() 
+{
+    let result = document.getElementById("result").value;
+    return document.getElementById("result").value = Math.abs(result);
+}
+
+function percentage() 
+{
+    document.getElementById("result").value += '*100/';
+    return 0;
+}
+
+function equalto() 
+{
+    let e = document.getElementById("result").value;
+    let s= eval(e);
+    return document.getElementById("result").value = s;
+}
